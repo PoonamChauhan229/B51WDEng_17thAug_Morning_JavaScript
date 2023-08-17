@@ -1,0 +1,73 @@
+Module 1:
+Javascript
+
+Module 2:
+HTML
+CSS
+Bootsrap
+
+Module 3:
+DOM Manipulation
+
+Module 4:
+Ad JS
+Async Await, callback , promises
+
+Recap:
+Build projects 
+
+
+Webcode
+Mock Interview
+
+React
+
+MongoDb
+
+NodeJS
+
+Capstone projects
+porfiolio
+Mock Interview
+
+Installations:
+
+Text editor –VS code
+https://code.visualstudio.com/download
+
+GitHub account  & GIT 
+https://github.com/
+create an account
+https://git-scm.com/downloads
+
+Node
+https://nodejs.org/en/download
+
+Req: backend
+Postman
+https://www.postman.com/downloads/
+
+Browser=> Google Chrome => setting => make a default browser
+
+Accounts
+Netlify=> create an account
+host to static/interactive website=> hosting FE project
+https://www.netlify.com/
+
+render=>create an account
+https://dashboard.render.com/
+=> deploying BE project
+
+
+
+HTTP response status codes
+HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
+
+Informational responses (100 – 199)=> HOLD ON => PROCESSING
+Successful responses (200 – 299)=>
+Redirection messages (300 – 399)
+Client error responses (400 – 499)
+Server error responses (500 – 599)
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#server_error_responses
+
