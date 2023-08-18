@@ -1,0 +1,240 @@
+Datatypes in JS:
+
+1.Primitive Datatypes
+2.Composite Datatypes
+3.Trivial Datatypes
+
+
+1.Primitive Datatypes:
+>Inbuilt Datatypes
+
+>Number
+>String
+>Boolean
+
+Number:
+> typeof()=> returns the Datatypes of the variable
+
+a=20
+20
+typeof(a)
+'number'
+b=56.6
+56.6
+typeof(b)
+'number'
+c=0.7
+0.7
+typeof(c)
+'number'
+d=34567890123456789023456789.234567890
+3.456789012345679e+25
+typeof(d)
+'number'
+
+
+---------------
+String
+=>''
+
+a='20'
+'20'
+typeof(a)
+'string'
+str=hello
+VM55203:1 Uncaught ReferenceError: hello is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM55203:1
+str='hello'
+'hello'
+typeof(str)
+'string'
+
+Concatenation:
+'1'+'1'
+'11'
+'2'+'2'
+'22'
+'hwllo'+'india'
+'hwlloindia'
+'hello'+'india'
+'helloindia'
+2+2+'1'
+'41'
+typeof('41')
+'string'
+'1'+2+2
+'122'
+
+
+----------------------
+Boolean
+>true
+>false
+
+z=true
+true
+typeof(z)
+'boolean'
+z=false
+false
+typeof(z)
+'boolean'
+z='false'
+'false'
+typeof(z)
+'string'
+_____________
+Composite Datatypes:
+array:
+object:
+
+
+Array:
+we can strore hetrogenous Datatypes
+comibination of Datatypes
+Start index=0, ends memorylocation(n-1)
+represented in a =>[]
+
+arr=[1,2,3,4,5,true,'hello']
+console.lo(arr)
+0:1
+1:2
+2:3
+3:4
+.....
+
+length of an array:
+arr.length
+7
+
+access array elements:
+//ouput as 2
+arr[1]
+arr[index_num]
+
+print table of 2 and store it in an array:
+11:10 ends this task:
+
+var arr=[]
+var n=2
+for(var i=1;i<11;i++){
+    arr.push(n*i)
+}
+console.log(arr)
+//2 4 6 8 10 12 14 16 18 20
+
+
+var arr1=[]
+for(var i=2;i<21;i=i+2){
+    arr1.push(i)
+}
+console.log(arr1)
+
+// arrays are also treated as Objects:
+
+Object:
+{key:value}
+
+=  assignment operator
+== comparision operator
+=== strict type comparision operator
+
+var obj={
+    name:"Guvi",
+    age:10,
+    "a ddress":"Chennai",
+    attendance:[56,78]
+}
+console.log(obj)
+
+// dot operator
+obj.name
+obj.age
+
+//[] sq bracket:
+obj['name']
+obj['a ddress']
+'Chennai'
+
+obj['attendance']
+(2) [56, 78]
+obj.attendance
+(2) [56, 78]
+
+
+//length of an object:
+Object.keys(obj)
+(4) ['name', 'age', 'a ddress', 'attendance']
+Object.values(obj)
+
+Object.keys(obj).length
+4
+
+
+
+//insert in an array:
+arr[index]=value
+
+//insert in an object
+obj.phone_number=7878787878
+
+var obj={name: 'Guvi', age: 10, a ddress: 'Chennai', attendance: Array(2), phone_number: 7878787878}
+
+//insert in an array:
+arr[index]=value
+
+//update an object
+obj.name="Rahul"
+'Rahul'
+obj
+{name: 'Rahul', age: 10, a ddress: 'Chennai', attendance: Array(2), phone_number: 7878787878}
+
+
+//delete in an object
+delete  obj.attendance
+true
+{name: 'Rahul', age: 10, a ddress: 'Chennai', phone_number: 7878787878}
+
+
+Trivial Datatypes:
+not defined=> not declared
+undefined=> declared but values not assigned
+null
+
+var num
+undefined
+
+if(num==null){console.log("Yes")}else{console.log("No")}
+VM4273:1 Yes
+
+if(num==undefined){console.log("Yes")}else{console.log("No")}
+VM4302:1 Yes
+
+if(num==" "){console.log("Yes")}else{console.log("No")}
+VM4363:1 No
+
+if(num==""){console.log("Yes")}else{console.log("No")}
+VM4406:1 No
+
+
+Question:
+1-Declare 4 variables in mulitiple lines 
+var a=1
+var b=2
+var c=3
+var d=4
+
+2-Declare 4 variables in single lines 
+var a,b,c,d
+
+
+
+
+
+
+
+
+
+
+
