@@ -1,0 +1,153 @@
+Copy By Value:
+a=5
+// copy a value to b variable.
+b=a
+
+a=b=5
+
+Copy By Ref:
+
+
+// Document and window object:
+document:
+entire webpage loaded in browser
+
+method 
+
+property
+
+split()
+=> () method
+
+.length=> property
+
+
+Property:
+title
+head
+forms
+body
+
+Methods.
+document.getElementById()
+document.addEventListener()
+
+
+Window object:
+DOM => topmoost object
+
+
+Methods:
+window.close()
+window.open()
+window.alert()
+
+
+Property:
+window.innerHeight
+window.innerWidth
+length
+console
+
+JSON:
+Javascript Object Notation:
+Representation of data
+
+var obj={
+    name:"guvi",
+    year:2023
+}
+// in JSON
+var jsonobj={
+    "name":"guvi",
+    "year":2023
+}
+
+JSON.parse()
+
+JSON.stringify():
+
+
+obj
+{name: 'guvi', year: 2023}
+JSON.stringify(obj)
+'{"name":"guvi","year":2023}'
+var newObj=JSON.stringify(obj)
+undefined
+newObj
+'{"name":"guvi","year":2023}'
+JSON.parse(newObj)
+{name: 'guvi', year: 2023}
+
+
+API:
+Application Programming Interface:
+|   API    |
+
+
+
+function
+
+function fname(){
+    //block of code
+}
+
+onload event attach
+
+global event
+annoymous function
+
+var xyz=function(){
+    //block of code
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
