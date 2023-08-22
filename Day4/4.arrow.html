@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arrow functions:
+        // =>
+
+        // annoymous function
+
+        var x=function(){
+            console.log("hey")
+        }
+        x()
+
+        // arrow function:
+        var y=(a)=>{
+            console.log("hello "+a)
+        }
+        y(67)
+
+        // return 
+        var d=(a,b)=>a+b;// single line no need return keyword and {}
+        console.log(d(1,1))
+
+        var e=(a,b)=>console.log(a+b);// single line no need return keyword and {}
+        e(1,1)
+
+        var sum=(a,b)=>{
+            var r=100;
+            var t=a+b+r
+            return t;
+        }
+        console.log(sum(45,89))
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+Functions:
+Integral Part
+Heart of JS
+
+syntax:
+function functionname(){
+    //block of code
+}
+//invoking a function or calling a function
+functionname()
+
+functionname userdefined
+5 functions name should be unique
+
+
+Addition of 2 numbers:
+
+function sum(){
+      console.log(2+3)  
+}
+sum()
+
+You define the functions and keep
+but you call them when it is needed.
+
+functions with parameters
+
+function functionname(param1,param2){//parameters
+    //block of code
+    console.log(param1+param2)//string
+}
+
+functionname("Hello"," Functions")//arguments
+
+Annoymous
+var x=function(param1,param2){//parameters
+    //block of code
+    console.log(param1+param2)//string
+}
+x(1,2)

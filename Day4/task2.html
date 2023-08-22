@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // sum of all numbers in an array:
+        // <!-- iife function -->
+        (
+            function(arr){
+                var total=0;
+                for(var i=0;i<arr.length;i++){
+                     total=total+arr[i]   
+                }
+                console.log(total)
+            }
+        )([2,4,5,6,8,9,7,1]);
+        // annoymous 
+        var annoymousSum=function(arr){
+            var total=0;
+                for(var i=0;i<arr.length;i++){
+                     total=total+arr[i]   
+                }
+                console.log(total)
+        }
+        annoymousSum([2,4,5,6,8,9,7,1])
+
+        // arrow function
+
+        var arrowSum=(arr)=>{
+            var total=0;
+            for(var i=0;i<arr.length;i++){
+                     total=total+arr[i]   
+                }
+                console.log(total)
+        }
+        arrowSum([2,4,5,6,8,9,7,1])
+
+
+        // normal function
+        function normalSum(arr){
+            var total=0;
+            for(var i=0;i<arr.length;i++){
+                     total=total+arr[i]   
+                }
+                console.log(total)
+        }
+        normalSum([2,4,5,6,8,9,7,1])
+
+    </script>
+</body>
+</html>
