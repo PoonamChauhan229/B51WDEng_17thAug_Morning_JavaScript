@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // VAR KEYWORD=> declare, redeclare, reassign, update the variables n no. of times
+        console.log(a)//undefined=> hoisting 
+        var a=10;
+        console.log(a)
+
+
+        a=30;
+        console.log(a)
+
+        var a=60;
+        console.log(a)
+
+        //LET KEYWORD: reassign, update the value n no of times but the you cant redeclare it
+        //console.log(b)//Uncaught ReferenceError: Cannot access 'b' before initialization
+        let b=100;
+
+        b=101;
+        console.log(b)
+
+        b=201
+        console.log(b)
+
+        // let b=250;
+        console.log(b)//Uncaught SyntaxError: Identifier 'b' has already been declared 
+
+        // CONST KEYWORD: we cant reassign, redeclare , we cant do anything
+       // console.log(c)//Uncaught ReferenceError: Cannot access 'c' before initialization
+        const c=100;
+
+        // c=300
+        console.log(c)//Uncaught TypeError: Assignment to constant variable.
+
+        // const c=300;
+        console.log(c)//Uncaught SyntaxError: Identifier 'c' has already been declared
+
+
+    </script>
+</body>
+</html>

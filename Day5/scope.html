@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //block scope
+        {
+            let a="guvi"
+            console.log(a)
+        }
+       // console.log(a)//scope.html:13 Uncaught ReferenceError: a is not defined
+    
+        
+        {   
+            var z="hellow"
+            let b="guvieek"
+            const c="hi"
+            {
+                console.log(b,c,z)
+            }
+        }
+        // console.log(b,c,z)
+
+
+        // functional scope => var keyword
+
+        function add(){
+            var a=89;
+            console.log(a)
+        }
+        add()
+        console.log(a)//a is not defined
+    </script>
+</body>
+</html>

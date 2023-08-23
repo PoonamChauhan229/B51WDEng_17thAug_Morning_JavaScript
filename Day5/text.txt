@@ -1,0 +1,7 @@
+var let const
+>3 keywords => declare the varibale
+
+var keyword:
+
+
+

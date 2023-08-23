@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ...=>spread operator
+        const numbers=[1,2,3]
+        123
+        console.log(numbers.join(" "))//1 2 3
+        console.log(...numbers)
+
+
+        // function
+        function sum(x,y,z){
+            console.log(x+y+z)
+        }
+        sum(...numbers)
+
+        const parts=['shoulders',"knnes"]
+        const lyrics=["head",...parts,"toes"]
+        console.log(lyrics)
+
+    </script>
+</body>
+</html>
