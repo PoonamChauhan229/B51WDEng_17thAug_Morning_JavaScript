@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class car
+        class Car{
+            constructor(name,year,color,AC){
+                console.log("class constructor",name,year)
+                this.name=name,
+                this.year=year,
+                this.color=color,
+                this.AC=AC
+            }
+            getColor(){
+                console.log("Color is black",this.color)
+            }
+
+            getAcAvailability(){
+                console.log("AC is ",this.AC)
+            }
+
+        }
+        // create an instance => object
+        // how to create an object:
+        //new keyword
+
+        var s1=new Car("Audi",2004,"Red","Available")
+        var s2=new Car("BMW",2012,"Black","Not Available")
+        console.log(s1)
+        console.log(s2)
+        s1.getColor()
+        s2.getColor()
+        s1.getAcAvailability()
+        s2.getAcAvailability()
+
+
+        console.log(1)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+OOPS: Object Oriented Programming
+
+OBJECTS
+classes
+METHODS
+
+classes: template of the Object
+template=> blueprint
+
+
+classes:
+
+syntax:
+class className{
+    
+}

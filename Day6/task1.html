@@ -1,0 +1,30 @@
+<!-- Write a person class to hold the details -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name,age,location,course){
+                console.log(`My name is ${name}, age is ${age}.I reside at ${location} and am learning ${course}`)
+                this.name=name,
+                this.age=age,
+                this.location=location
+                this.course=course
+            }
+            getPersonDetails(){
+                console.log(`My name is ${this.name}, age is ${this.age}.I reside at ${this.location} and am learning ${this.course}`)
+            }
+        }
+        var newUser=new Person("Poonam",25,"Mumbai","FSD")
+
+        newUser.getPersonDetails()
+
+
+    </script>
+</body>
+</html>

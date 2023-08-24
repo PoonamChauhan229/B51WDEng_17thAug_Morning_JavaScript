@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Class - Movie
+
+// The class Movie is stated below. An instance of class Movie represents a film. This class has the following three properties:
+
+// title, which is a String representing the title of the movie
+// studio, which is a String representing the studio that made the movie
+// rating, which is a String representing the rating of the movie (i.e. PG­13, R, etc)
+
+// a) Write a constructor for the class Movie, which takes a String representing the title of the movie, a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
+
+class Movie{
+    constructor(title,studio,rating){
+        this.title=title,
+        this.studio=studio
+        // this.rating=rating
+        // this.rating="PG"
+        if(rating==null){
+           this.rating="PG"
+        }else{
+           this.rating=rating
+        }
+    }
+    getPG(arr){
+        console.log("getPG method is called",arr)
+        //only pg as a rating, that should be there
+        let PGResult=[]
+        for(var i=0;i<arr.length;i++){
+            // console.log(arr[i].rating)
+            if(arr[i].rating=="PG"){
+                //console.log(arr[i].rating)
+                //console.log(arr[i])
+                PGResult.push(arr[i])
+
+            }
+        }
+        console.log(PGResult)
+
+
+    }
+}
+let movie1=new Movie("Casino Royale","Eon Productions","PG­13")
+let movie2=new Movie("ABC","A Productions","PG")
+let movie3=new Movie("DEF","D Productions")
+let movie4=new Movie("XYZ","X Productions","PG­15")
+let movie5=new Movie("LMN","L Productions")
+let movie6=new Movie("TYU","T Productions","PG")
+let movie7=new Movie("TYU","T Productions")
+
+
+var array=[movie1,movie2,movie3,movie4,movie5,movie6,movie7]
+console.log(array)
+
+console.log(movie1)
+movie4.getPG(array)
+// [movie1,movie2]
+
+// b) The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+
+// c) Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. The returned array need not be full.
+
+// d) Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”
+
+</script>
+
+</body>
+</html>
