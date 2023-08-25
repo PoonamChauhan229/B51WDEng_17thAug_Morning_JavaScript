@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3,4]
+        // o/p[2,4,6,8] 0123
+        // o/p[2,5,8,11]
+    
+        // map
+        arr.map((element)=>console.log(element *2))
+        arr.map((element,index)=>console.log(element *2+index))
+
+       console.log(arr.map((element,index)=>element *2+index))
+       console.log(arr)
+
+       var result=arr.map((element)=>element *2)
+       console.log(result)
+    
+
+    //   
+    var arr1=["1p","2j","3u"]
+    // o/p=>[2,4,6]
+
+    console.log(arr1)
+    arr1.map((element)=>console.log(parseInt(element)*2))
+
+    let result1= arr1.map((element)=>parseInt(element)*2)
+    console.log(result1)
+
+
+    // Array of objects:
+    let users=[
+        {fname:"ABC",lname:"XYZ"},
+        {fname:"PQR",lname:"OPL"},
+        {fname:"LMN",lname:"YUH"},
+    ]
+    console.log(users)
+    // op: fullnames
+
+    users.map((element)=>console.log(element))
+    let userFullNames=users.map((element)=>`${element.fname} ${element.lname}`)
+    console.log(userFullNames)
+
+
+    // Filter
+    //eliminating something and get the desired output
+    // filter()
+    // odd even 
+    // even
+    var result5=arr.filter((element)=>element%2==0)
+    console.log(result5)
+    console.log(arr)
+
+    var result6=arr.filter((element)=>element%2!==0)
+    console.log(result6)
+
+    // Reduce
+    // reduce() add 5 numbers 
+
+    var result56=arr.reduce((acc,cv)=>acc+cv)
+    console.log(result56)
+// acc=>
+//cv
+
+var arr=[1,2,3,4]
+var result56=arr.reduce((acc,cv)=>acc+cv,100)
+console.log(result56)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student=[
+            {
+                name:"alex",
+                marks:50
+            },
+            {
+                name:"bob",
+                marks:60
+            },
+            {
+                name:"karl",
+                marks:40
+            },
+        ]
+        
+        var result=student.reduce((acc,cv)=>acc+cv.marks,0)
+        console.log(result)
+
+        
+    </script>
+</body>
+</html>
