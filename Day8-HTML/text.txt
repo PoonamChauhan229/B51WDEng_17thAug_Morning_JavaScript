@@ -1,0 +1,65 @@
+What is HTML & Why use it?
+Basic Tags
+HTML vs HTML5
+div vs section vs article
+div vs span
+inline vs block elements
+HTML Forms
+Input elements and attributes
+Form submit
+Session Practice task URL:
+https://github.com/rvsp/HTML-CSS/blob/master/Mini-tasks/001-HTML.md
+
+
+Extensions:
+HTML CSS Support-ecmel
+HTML Boilerplate-sidthesloth
+Live Server-Ritwick Dey
+vscode-icons-VSCode Icons Team
+
+Boilerplate/Emmet Abb
+shift!
+html:5
+
+
+HTML
+HTML=> Hypertext Markup language
+web pages and web applications
+static web pages 
+not a programming language
+
+
+html
+><head></head>
+    ><meta>=>extra information
+    ><title></title>=>name of webpage
+><body></body>
+    >decide ur skeleton/structure
+
+
+Tags:
+<>
+OR
+</>
+self closing tags:
+<meta>
+<meta/>
+<br>
+<br/>
+
+openinng and closing tags:
+<html></html>
+<head></head>
+<title></title>
+<body></body>
+<></>
+Attributes:
+
+Elements:
+<title>GUVI | Learn to code in your native language</title>
+content+tag= element
+
+Tag:
+<html></html>
+<meta/>
+<title></title>
