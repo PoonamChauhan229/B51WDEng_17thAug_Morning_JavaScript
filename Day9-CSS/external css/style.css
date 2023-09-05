@@ -1,0 +1,41 @@
+#sectionone{
+    color:white;
+    background-color: navy;
+    height:100px;
+    width:100px;
+}
+#sectiontwo{
+    color:yellow;
+    background-color: green;
+    height:100px;
+    width:100px;
+}
+#sectionthree{
+    color:white;
+    background-color: brown;
+    height:100px;
+    width:100px;
+}
+#sectionfour{
+    color:black;
+    background-color: pink;
+    height:100px;
+    width:100px;
+}
+#sectionfive{
+    color:aqua;
+    background-color: blueviolet;
+    height: 100px;
+    width:100px;
+}
+#sectionsix{
+    color:azure;
+    background-color: #5f9ea0;
+    height: 100px;
+    width: 100px;
+}
+#cssimage{
+    height: 100px;
+    width: 200px;
+    border:5px solid black;
+}

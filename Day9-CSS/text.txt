@@ -1,0 +1,42 @@
+Contents:
+What is CSS?
+ways to use CSS 
+property & value 
+class vs id 
+use of important 
+display property: inline, block 
+
+CSS:
+3 ways 
+=>inline css
+=>internal css
+=>external css
+
+
+
+propertyname:value
+color:yellow;//text
+height:100px;
+width:200px;
+background-color:red;
+
+inline css:
+style attribute
+style=""
+
+
+3 types of selectors
+tag selectors
+
+class selectors
+>class attribute
+>class="userdefined"
+>prefix .classname
+>multiple places
+
+id selectors
+>id attribute
+>id="userdefined
+>prefix #idname
+>one place
+

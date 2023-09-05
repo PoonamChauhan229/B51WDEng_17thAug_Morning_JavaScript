@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+<body>
+    <form>
+        <!-- bind label and input
+        label=> for attribute
+        input=> id attribute
+        => keep it same (userdefined)
+        -->
+        <label for="username">Enter Your Name:</label>
+        <input type="text" name="fullname" id="username" /><br/><br/>
+
+        <label for="email">Enter your Email Address</label>
+        <input type="email" name="emailaddress" id="email" /><br /><br />
+        
+        
+        <!-- Radio button  only 1 selection-->
+        <input type="radio" name="gender" id="male" value="Male" required>
+        <label for="male">Male</label>        
+
+        <input type="radio" name="gender" id="female" value="Female" required>
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" id="transgender" value="Transgender">
+        <label for="transgender">Transgender</label>
+
+        <input type="radio" name="gender" id="unknown" value="Unknown">
+        <label for="unknown">Unknown</label><br /><br />
+
+        <!-- checkboxes multiple selections-->
+        <!-- No of vehicles  -->
+        <input type="checkbox" name="vehicle1" id="car" value="car">
+        <label for="car">Car</label>
+
+        <input type="checkbox" name="vehicle2" id="boat" value="boat">
+        <label for="boat">Boat</label>
+
+        <input type="checkbox" name="vehicle3" id="bike" value="bike">
+        <label for="bike">Bike</label>
+
+        <input type="checkbox" name="vehicle4" id="jet" value="jet">
+        <label for="jet">Jet</label><br><br>
+
+        <!-- options task-->
+        <select name="" id="">
+            <option value="">A</option>
+            <option value="">B</option>
+            <option value="">C</option><br><br>
+        </select>
+        <input type="submit" value="Submit" />
+      </form>
+</body>
+</html>

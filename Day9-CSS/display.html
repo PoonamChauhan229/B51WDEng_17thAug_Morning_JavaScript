@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: yellow;
+            height:100px;
+            width:100px;
+            display: inline;
+           /* from block to inline */
+        }
+        span{
+            background-color: pink;
+            height:100px;
+            width:100px;
+            /* heght width does not work on inline element */
+            display: block;
+            /* inline to block */
+        }
+        p{
+            background-color: pink;
+            height:100px;
+            width:100px;
+            /* heght width does not work on inline element */
+            display: inline-block;
+            /* inline  element but it accepts the block properties/features(height and width)*/
+        }
+        h1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>1div ->block</div>
+    <span>2span->inline</span>
+    <p>3-block ->inline-block</p>
+    <h1>This is a heading Tag</h1>
+</body>
+</html>
