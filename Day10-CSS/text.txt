@@ -1,0 +1,61 @@
+Intro to pseudo-classes (link, visited,hover, active)
+box model: padding, margin, border 
+Grid
+Flex - display, direction, wrap, flex-flow, justify-content, align-content
+position property: fixed, static, relative, absolute, sticky
+gradient
+
+
+
+box model: padding, margin, border :
+
+Kind of wrapper around every html element
+1-Margin
+2-Border=> drawing a line around the element.
+3-Padding
+
+3-Padding
+TRBL
+shorthand properties
+padding:100px=>TRBL
+padding:70px 50px =>TB RL
+padding:10px 20px 30px 40px=>TRBL
+padding:5px 6px 7px => TRB xxxLeftxxx R=L(6px)
+padding:5px 0px 7px 2px=>TRBL
+
+Normal:
+padding:10px 20px 30px 40px=>TRBL
+
+padding-top:10px;
+padding-right:20px;
+padding-bottom:30px;
+padding-left:40px;
+
+
+3-Margin
+TRBL
+shorthand properties
+margin:100px=>TRBL
+margin:70px 50px =>TB RL
+margin:10px 20px 30px 40px=>TRBL
+margin:5px 6px 7px => TRB xxxLeftxxx R=L(6px)
+margin:5px 0px 7px 2px=>TRBL
+
+Normal:
+margin:10px 20px 30px 40px=>TRBL
+
+margin-top:10px;
+margin-right:20px;
+margin-bottom:30px;
+margin-left:40px;
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .lineargrad{
+        width:120px;
+        height: 120px;
+        border: 1px solid grey;
+        margin:5px;
+    }
+    #lineargrad1{
+        /* top to bottom */
+       background-image: linear-gradient(red,yellow,pink,orange,green);
+    }
+    #lineargrad2{
+        /* left to right */
+        /* start to destination */
+        background-image: linear-gradient(to right,yellow,pink,orange);
+    }
+    #lineargrad3{
+        /* right to left */
+        /* start to destination */
+        background-image: linear-gradient(to left,yellow,pink,orange);
+    }
+    #lineargrad4{
+        /* diagonal*/
+        /* start to destination */
+        background-image: linear-gradient(to bottom right,yellow,pink,orange);
+    }
+    #lineargrad5{
+        /* diagonal*/
+        /* start to destination */
+        background-image: linear-gradient(to bottom left,yellow,pink,orange);
+    }
+    /* best */
+    #lineargrad6{
+        /* diagonal*/
+        /* start to destination */
+        background-image: linear-gradient(327deg,green, blue,orange)
+    }
+</style>
+<body>
+    <div id="lineargrad1" class="lineargrad"></div>
+    <div id="lineargrad2"class="lineargrad"></div>
+    <div id="lineargrad3" class="lineargrad"></div>
+    <div id="lineargrad4" class="lineargrad"></div>
+    <div id="lineargrad5" class="lineargrad"></div>
+    <div id="lineargrad6" class="lineargrad"></div>
+</body>
+</html>
