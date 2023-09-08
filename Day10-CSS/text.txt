@@ -49,6 +49,37 @@ margin-right:20px;
 margin-bottom:30px;
 margin-left:40px;
 
+POsition:
+1-static
+2-relative
+3-absolute
+4-fixed
+5-sticky
+
+
+position:static=>default one=>no change=> left right top bottom no change
+position:relative
+position:absolute
+position:fixed
+position:sticky
+
+left
+OR
+right
+
+top 
+OR
+bottom
+
+
+
+
+
+
+
+
+
+
 
 
 
