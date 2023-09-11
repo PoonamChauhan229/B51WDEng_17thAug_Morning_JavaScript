@@ -1,0 +1,98 @@
+<!DOChttps://cdnjs.com/libraries/font-awesomeTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin:0;
+        padding:0;
+    }
+    .navbar{
+        background-color: navy;
+        color:white;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+    .navleft{
+        display: flex;
+        /* background-color: yellow; */
+        width: 28%;
+        justify-content: space-between;
+    }
+    .fa-solid{
+        margin-right:3px;
+        color:whitesmoke;
+    }
+    .dropdown{
+        color:white;
+        position: relative;
+
+    }
+    .dropdownlist{
+        display:none;
+        position:absolute;
+        background-color: rgb(7, 7, 83);
+        left: 35px;
+       /* width: 120px; */
+        top:20px;
+    }
+    .dropdown:hover .dropdownlist{
+        display: block;
+     } 
+
+.courseName{
+    padding: 10px;
+    /* border: 1px solid white; */
+    border-bottom: 1px solid grey;
+   
+}
+.about{
+    width:600px !important;
+}
+.width{
+ width: 120px;
+}
+</style>
+<body>
+<div class="navbar">
+    <div class="navleft">
+        <div><i class="fa-solid fa-house"></i>Home</div>
+        <div class="dropdown"><i class="fa-solid fa-eject"></i>About Us
+            <div class="dropdownlist">
+                <div class="courseName about"><i class="fa-brands fa-html5"></i>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ducimus in nostrum accusantium deleniti, assumenda soluta reprehenderit accusamus distinctio aliquid reiciendis ipsum repudiandae, nesciunt hic nobis consequatur labore possimus atque sint amet perferendis. Accusantium corporis voluptatibus quaerat debitis asperiores non sunt incidunt iure beatae quidem! Exercitationem consequatur quibusdam dolores magnam.
+                </div>  
+            </div>      
+        </div>
+        <div class="dropdown"><i class="fa-solid fa-book-journal-whills"></i>Courses Offered
+        
+            <div class="dropdownlist width">
+                <div class="courseName"><i class="fa-brands fa-html5"></i>  HTML</div>
+                <div class="courseName"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                <div class="courseName"><i class="fa-brands fa-square-js"></i> Javascript</div>
+                <div class="courseName"><i class="fa-brands fa-react"></i> React</div>
+                <div class="courseName"><i class="fa-solid fa-database"></i> MongoDB</div>
+                <div class="courseName"><i class="fa-brands fa-node"></i> Node</div>
+            </div>
+        </div>
+    </div> 
+    <div> <i class="fa-solid fa-user"></i> Login</div>
+</div>
+
+    
+<p><i class="fa-solid fa-user"></i>  Login</p>
+<p><i class="fa-solid fa-cart-shopping"></i></p>
+<i class="fa-solid fa-cart-shopping"></i>
+<p><i class="fa-solid fa-headphones"></i></p>
+
+</body>
+</html>
+
+<!-- https://cdnjs.com/libraries/font-awesome -->
