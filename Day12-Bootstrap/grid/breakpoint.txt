@@ -1,0 +1,47 @@
+Extra small (xs):
+Range: Less than 576px
+Pixel value: 0px to 575px
+
+Small (sm):
+Range: Greater than or equal to 576px
+Pixel value: 576px to 767px
+
+Medium (md):
+Range: Greater than or equal to 768px
+Pixel value: 768px to 991px
+
+Large (lg):
+Range: Greater than or equal to 992px
+Pixel value: 992px to 1199px
+
+Extra large (xl):
+Range: Greater than or equal to 1200px
+Pixel value: 1200px and above
+
+ you can use classes like col-xs-, col-sm-, col-md-, col-lg-, and col-xl- to define different column widths for different screen sizes.
+
+ 12
+ container/container-fluid
+    >row
+        >col=12
+    >row
+        >col=5
+        >col=5
+        >col=2
+    >row
+        >col=4
+        >col=8
+
+
+12
+1*12=12
+4*3=12
+3*4=12
+8+4=12
+5+5+2=12
+
+col-xs-,
+col-sm-,
+col-md-,
+col-lg-,
+col-xl-
