@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        background-color: pink;
+    }
+</style>
+<body>
+<h1>Everyone</h1>
+
+<script>
+// var division=document.createElement('div')
+// division.innerHTML="<h1>Hello</h1>"
+// document.body.append(division)
+
+// Create an Element
+// use a method createElement() => document
+// text=> innerHTML /innerText => variable used for =>element created
+// append=> append()=> document.body.append()=> variable name => without double quotes
+
+// using innerHTML
+var section1=document.createElement('p')
+section1.innerHTML="<h4>The Times is a British daily national newspaper based in London. It began in 1785 under the title The Daily Universal Register, adopting its current name on 1 January 1788</h4>"
+// 1 id 0r 1 class
+//setAttribute()
+section1.setAttribute('id','xyz')
+//section1.setAttribute('href','www.guvi.in')
+section1.setAttribute('class','abc')
+
+//classList=> multiple class
+section1.classList.add('main','header','main2')
+
+//style an element:
+section1.style.color="navy"
+section1.style.textAlign="center"
+
+
+document.body.append(section1)
+
+console.log(section1)
+
+//using innerText
+var section2=document.createElement('p')
+section2.innerText="<h4>The Times is a British daily national newspaper based in London. It began in 1785 under the title The Daily Universal Register, adopting its current name on 1 January 1788</h4>"
+
+document.body.append(section2)
+
+console.log(section2)
+
+// Appending to any element
+var section3=document.createElement('span')
+section3.innerText="Read Top News in India and around the World on Times of India. Breaking news coverage and analysis on US presidential election, politics, current affairs, business & sports."
+
+section1.append(section3)
+
+//append() appendChild()
+// document.body.append(section1,section2,section3)// n no of args
+// document.body.appendChild(section1)//1 args
+
+
+
+</script>
+</body>
+</html>
