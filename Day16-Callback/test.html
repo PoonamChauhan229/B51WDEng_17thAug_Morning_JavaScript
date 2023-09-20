@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <button onclick="createBox()">Create Box</button>
+        <br><br>
+        <div id="boxes"></div>
+        
+    </div>
+    <script>
+        var boxes=document.getElementById('boxes')
+        
+        function createBox(){
+            var div=document.createElement('div')
+            div.style.backgroundColor="green"
+            div.style.border="1px solid black"
+            div.style.marginRight="2px"
+            div.style.marginBottom="2px"
+            div.style.width="100px"
+            div.style.height="100px"
+            boxes.style.display="flex"
+            boxes.style.flexWrap="wrap"
+            boxes.append(div)            
+        }
+    </script>
+</body>
+</html>

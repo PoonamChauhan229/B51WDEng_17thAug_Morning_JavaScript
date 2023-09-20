@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        color:red;
+    }
+</style>
+<body>
+    <!-- With Javascript write a simple from validation -->
+
+    <form onsubmit="formSubmit(event)">
+        <label for="username">UserName</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p id="name"></p>
+    <p id="pwd"></p>
+    <script>
+        function formSubmit(event){
+            event.preventDefault()
+            console.log(event)
+            var username=document.getElementById('username').value
+            console.log(username)
+
+            var password=document.getElementById('password').value
+            console.log(password)
+
+            var errorname=document.getElementById('name')
+            var errorpwd=document.getElementById('pwd')
+
+
+            if(username.length<5 && username==""){
+                errorname.innerText=`Enter the correct name`
+            }
+
+            if(password.length<5 && password==""){
+                errorpwd.innerText=`Enter the Password`
+            }
+
+        }
+    </script>
+</body>
+</html>

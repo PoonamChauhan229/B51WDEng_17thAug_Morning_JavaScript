@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function callMe(){
+            console.log("I am callback function")
+        }
+        //callMe()=>callback()
+
+        function greet(name,callback){
+            console.log(`Hi, my name is ${name}`)
+            callback()
+        }
+
+        greet("Guvi",callMe)
+
+
+        // callback another example
+        function greetings(name){
+            console.log(`My name is ${name}`)
+        }
+
+        function Welcome(callback){
+            var fullName="Guvi Geek"
+            //return fullName;
+            callback(fullName)
+        }
+
+        Welcome(greetings)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(10)
+        console.log(2)
+        console.log(3)
+        // setTimeout(function,delay in ms)
+        setTimeout(timer1,3000)
+        function timer1(){
+            console.log("Timer1 has been called")
+        }
+
+        setTimeout(timer2,2000)
+        function timer2(){
+            console.log("Timer2 has been called")
+        }
+        //arrow function
+        setTimeout(()=>{
+            console.log("Arrow function timer has been called")
+        },1000)
+
+    </script>
+</body>
+</html>

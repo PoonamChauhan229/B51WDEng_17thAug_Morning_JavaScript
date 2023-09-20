@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: navy;
+}
+</style>
+<body>
+    <div id="test"></div><br>
+    <button onclick="stopAnim()">Stop</button>
+    <script>
+        var id=setTimeout(anim,5000)
+        function anim(){
+            console.log("anim")
+            var divSize=document.getElementById('test')
+            divSize.style.width="150px"
+            divSize.style.backgroundColor="black"
+            var ptext=document.createElement('p')
+            ptext.innerHTML="Animation Done"
+            document.body.append(ptext)
+        }
+        function stopAnim(){
+            console.log("Animation Stopped")
+            clearTimeout(id)//clear the timer
+            var ptext=document.createElement('p')
+            ptext.innerHTML="Animation Stopped"
+            document.body.append(ptext)
+        }
+    </script>
+</body>
+</html>
