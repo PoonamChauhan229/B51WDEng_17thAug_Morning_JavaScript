@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // new Keyword
+    // A callback used to initialize the promise. This callback is passed two arguments:
+            // a resolve callback used to resolve the promise with a value or the result of another promise,
+            // and a reject callback used to reject the promise with a provided reason or error.
+        const p=new Promise(()=>{})
+       
+        console.log(p)
+
+        const p1=new Promise((resolve,reject)=>{
+            resolve("Hi Welocme to the Promise World")
+            reject("Access Denied to the Promise World")
+        })
+        console.log(p1)
+
+        const p2=new Promise((resolve,reject)=>{
+            reject("Access Denied to the Promise World")
+            resolve("Hi Welocme to the Promise World")
+            
+        })
+        console.log(p2)
+
+        const p3=new Promise((resolve,reject)=>{
+            if(true){
+                resolve("Hi Welocme to the World of Promisesss")
+            }else{
+                reject("Access Denied to the World of Promisesss...Revalidate!!!")
+            }
+        })
+        console.log(p3)
+
+
+        const p4=new Promise((resolve,reject)=>{
+            if(false){
+                resolve("Hi Welocme to the World of Promisesss")
+            }else{
+                reject("Access Denied to the World of Promisesss...Revalidate!!!")
+            }
+        })
+        console.log(p4)
+
+        var age=prompt("Enter the age:")
+        const p5=new Promise((resolve,reject)=>{
+            if(age>20){
+                resolve("Hi Welocme to the World of Promisesss")
+            }else{
+                reject("Access Denied to the World of Promisesss...Revalidate!!!")
+            }
+        })
+        console.log(p5)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function writePromise(){
+            
+            return new Promise((resolve,reject)=>{
+            if(false){
+                resolve("Hi Welocme to the World of Promisesss")
+            }else{
+                reject("Access Denied to the World of Promisesss...Revalidate!!!")
+            }
+        })
+    }
+    //.then() .catch()
+    //console.log(writePromise())
+    writePromise().then((res)=>console.log(res)).catch((err)=>console.log(err))
+
+
+    function writePromiseSetTimout(){
+            
+            return new Promise((resolve,reject)=>{
+            if(true){
+              setTimeout(()=>{
+                resolve("Hi Welocme to the World of Promisesss of SetTimeout")
+              },2000)
+            }else{
+                reject("Access Denied to the World of Promisesss...Revalidate!!!")
+            }
+        })
+    }
+
+    writePromiseSetTimout()
+    .then((res)=>console.log(res))
+    .catch((err)=>console.log(err))
+
+
+    //using promises:
+
+    let myPromise=new Promise((resolve,reject)=>{
+        let request=new XMLHttpRequest()  
+        // open an connection
+        request.open('GET','https://restcountries.com/v3.1/all')
+
+        //sending an connection
+        request.send()
+
+        // onload event=> page load 
+
+        request.onload= function(){
+            console.log(request)
+            if(request.status==200){
+                // if(request.statusText=="OK"){
+                var data=JSON.parse(request.response)
+                resolve(data)
+            }else{
+                reject("Something Went Wrong!!!!")
+            }
+        }
+    })
+    myPromise.then((res)=>console.log(res)).catch((err)=>console.log(err))
+
+    // using callback=> 10+5 min=> 12:00 + 12:05
+
+    function displayCountries(countries){
+        console.log(countries)
+    }
+
+    function cbkXML(callback){
+        let request=new XMLHttpRequest()  
+        // open an connection
+        request.open('GET','https://restcountries.com/v3.1/all')
+
+        //sending an connection
+        request.send()
+
+        // onload event=> page load 
+        request.onload= function(){
+            console.log(request)
+            if(request.status==200){
+                var data=JSON.parse(request.response)
+                callback(data)
+            }else{
+                callback("Error"+request.status)
+            }
+        }
+    }
+    cbkXML(displayCountries)
+
+
+    //Promise+callback
+
+    </script>
+</body>
+</html>
