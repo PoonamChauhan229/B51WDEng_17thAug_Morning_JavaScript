@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // https://restcountries.com/v2/all
+
+        var req=fetch('https://restcountries.com/v2/all')
+        console.log(req)
+        //fetch is returning an promise
+        //access this data/result
+
+
+        var req1=fetch('https://restcountries.com/v2/all')
+        .then((res)=>{
+            console.log(res)
+            //console.log(res.json())
+            return res.json()
+        })
+        .then((data)=>console.log(data))
+        .catch(err=>console.log(err))
+    </script>
+</body>
+</html>

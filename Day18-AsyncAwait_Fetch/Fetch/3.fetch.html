@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+
+        var req1=fetch('https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=68efa0885519a6f01d76917c463ada68')
+        .then((res)=>{
+            //console.log(res.json())
+            return res.json()
+        })
+       // .then((data)=>console.log(data))
+       .then((data)=>display(data.main.temp))
+        .catch(err=>console.log(err))
+
+
+        function display(params){
+            console.log(params)
+        }
+
+    </script>
+</body>
+</html>

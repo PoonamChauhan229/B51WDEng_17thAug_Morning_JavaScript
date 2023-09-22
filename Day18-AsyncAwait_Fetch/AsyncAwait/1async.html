@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function test(){
+            return "hi"
+        }
+        console.log(test())
+
+        //async 
+
+        async function test1(){
+            return "hello"
+        }
+        console.log(test1())
+
+        //async await 
+        async function test2(){
+            let data =await "hello2"
+           // return data;
+            console.log(data)
+        }
+        test2()
+       var res= test2()
+
+       test2().then((res)=>console.log(res))
+       console.log(res)
+      //  console.log(test2())
+
+      async function logTest2(){
+        console.log(await test2())
+      }
+      logTest2()
+
+
+
+    </script>
+</body>
+</html>

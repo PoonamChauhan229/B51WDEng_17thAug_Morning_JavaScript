@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function getCountriesData(){
+            let data =await fetch('https://restcountries.com/v2/all')
+            let res=await  data.json()
+            console.log(res)
+        }
+        getCountriesData()
+    </script>
+</body>
+</html>
